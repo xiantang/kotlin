@@ -8,8 +8,13 @@ import java.util.*
 /**
  * return type Unit
  */
-
-
+data class Fish(val name: String)
+fun fishExamples():String {
+    val fish = Fish("splashy")  // all lowercase
+    with(fish.name) {
+        return this.capitalize()
+    }
+}
 //fun feedTheFish() {
 //    val day = randomDay()
 //    val food = "pellets"
